@@ -6,18 +6,18 @@ body {
 }
 
 .container {
-  padding: 30px 10px;
   background-color: rgba($color: #fff, $alpha: 0.4);
   border-radius: 10px;
   width: 70%;
+  padding: 30px;
 
   @include atSmall {
-    width: 100%;
+    width: 90%;
+    padding: 20px;
   }
 
   @include atLarge {
     width: 70%;
-    padding-bottom: 10px;
   }
 }
 
@@ -36,16 +36,25 @@ body {
     background-color: royalblue*1.3%;
   }
 }
+
 img {
   border-radius: 10px;
-  height: 20rem;
-  width: auto;
+  height: 13rem;
+
+  @include atSmall {
+    width: 99.9%;
+  }
+
+  @include atLarge {
+    height: 95%;
+    width: auto;
+  }
 }
 
 #header {
   font-weight: 100;
   font-family: 'Roboto', sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
 
   @include atSmall {
     font-size: 4rem;
